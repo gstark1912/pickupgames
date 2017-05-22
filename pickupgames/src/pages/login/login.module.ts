@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { LoginPage } from './login';
+import { Facebook } from '@ionic-native/facebook';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,10 @@ import { LoginPage } from './login';
   ],
   exports: [
     LoginPage
+  ],
+  providers:
+  [
+    Facebook
   ]
 })
-export class LoginPageModule {}
+export class LoginPageModule { }
